@@ -21,7 +21,7 @@ export function withOneTabEnforcer({
           appName
         )
       ) {
-        return <OnlyOneTabComponent />;
+        return <OnlyOneTabComponent {...props} />;
       } else {
         return <WrappedComponent {...props} />;
       }
